@@ -1,0 +1,87 @@
+.Weather {
+  border: 1px solid rgb(209, 209, 209);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cityName {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 0px;
+}
+.date {
+  font-size: 16px;
+  margin-top: 0px;
+  padding: 0px;
+}
+.weatherImage {
+  width: 250px;
+  display: block;
+  margin: 30px auto;
+}
+.temp {
+  text-align: center;
+  margin-top: 0px;
+  padding: 0px;
+}
+.degrees {
+  font-size: 80px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+.cilsiuse {
+  position: relative;
+  top: -50px;
+  font-size: 20px;
+}
+
+.weatherType {
+  font-size: 25px;
+  margin-top: 0px;
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.TodayImg {
+  display: flex;
+  justify-content: center;
+}
+.Today {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.Water {
+  width: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.Percentage {
+  text-align: center;
+}
+.MaxMindegree {
+  width: 32px;
+  display: block;
+  margin: 0 auto;
+}
+.MaxMin {
+  display: flex;
+  justify-content: center;
+}
+
+.windy {
+  width: 35px;
+  display: block;
+  margin: 0 auto;
+}
+.Speed {
+  text-align: center;
+}
+.Speedwind {
+  font-size: 17px;
+}
+.KilometerH {
+  font-size: 10px;
+}
