@@ -11,9 +11,10 @@
   padding: 0px;
 }
 .date {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 0px;
   padding: 0px;
+  font-weight: bold;
 }
 .weatherType {
   font-size: 16px;
