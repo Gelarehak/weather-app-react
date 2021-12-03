@@ -1,9 +1,11 @@
 .App {
   font-family: "Outfit", sans-serif;
-  max-width: 700px;
+  max-width: 500px;
   margin: 30px auto;
   padding: 15px;
 }
+
 footer {
+  margin-top: 10px;
   font-size: 13px;
 }
