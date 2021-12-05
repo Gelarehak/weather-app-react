@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import WeatherInfo from "./WeathetInfo";
 import axios from "axios";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
@@ -19,6 +20,7 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
+      coord: response.data.coord,
     });
   }
 
@@ -62,68 +64,7 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weather} />
         <hr />
-        <div className="row">
-          <div className="col-2">
-            {" "}
-            <div className="Day"> Sunday </div>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="weatherpicture"
-              class="dayImg"
-            />
-            <div className="DayDegree">25℃</div>
-          </div>
-          <div className="col-2">
-            {" "}
-            <div className="Day"> Sunday </div>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="weatherpicture"
-              class="dayImg"
-            />
-            <div className="DayDegree">25℃</div>
-          </div>
-          <div className="col-2">
-            {" "}
-            <div className="Day"> Sunday </div>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="weatherpicture"
-              class="dayImg"
-            />
-            <div className="DayDegree">25℃</div>
-          </div>
-          <div className="col-2">
-            {" "}
-            <div className="Day"> Sunday </div>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="weatherpicture"
-              class="dayImg"
-            />
-            <div className="DayDegree">25℃</div>
-          </div>
-          <div className="col-2">
-            {" "}
-            <div className="Day"> Sunday </div>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="weatherpicture"
-              class="dayImg"
-            />
-            <div className="DayDegree">25℃</div>
-          </div>
-          <div className="col-2">
-            {" "}
-            <div className="Day"> Sunday </div>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="weatherpicture"
-              class="dayImg"
-            />
-            <div className="DayDegree">25℃</div>
-          </div>
-        </div>
+        <WeatherForecast coord={weather.coord} />
       </div>
     );
   } else {
