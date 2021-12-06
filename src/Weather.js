@@ -11,7 +11,7 @@ export default function Weather(props) {
   function handelResorce(response) {
     setWeather({
       ready: true,
-      coord: response.data.main,
+      coord: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       temperatureMax: response.data.main.temp_max,
