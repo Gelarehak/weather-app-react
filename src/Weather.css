@@ -1,3 +1,7 @@
+:root {
+  --color: #d3d6db;
+}
+
 .App {
   max-width: 450px;
   margin: 0 auto;
@@ -11,7 +15,7 @@
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: rgba(220, 0, 0, 1);
+  background-color: #9f1e49;
   background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0.2),
@@ -25,35 +29,38 @@
   border: 1px solid rgb(209, 209, 209);
   padding: 20px;
   border-radius: 8px;
-  background: rgb(211, 210, 210);
+  background-color: #385170;
 }
 .cityName {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   margin-top: 13px;
   padding: 0px;
+  color: var(--color);
 }
 .date {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 0px;
   padding: 0px;
   font-weight: bold;
+  color: var(--color);
 }
 .weatherType {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 0px;
   padding: 0px;
   font-weight: bold;
   margin-bottom: 40px;
+  color: var(--color);
 }
 .weatherImage {
-  width: 150px;
+  width: 130px;
   display: block;
   margin: 0px auto;
 }
 .temp {
   text-align: center;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 0px;
 }
 .temp a {
@@ -64,19 +71,24 @@
   margin: 0px;
   padding: 0px 0px 0px 50px;
   font-weight: bold;
+  color: var(--color);
 }
 .cilsiuse {
   position: relative;
   top: -50px;
   font-size: 17px;
+  color: var(--color);
 }
-
+.cilsiuse a {
+  color: #f83e4b;
+}
 .TodayImg {
   display: flex;
   justify-content: center;
+  color: var(--color);
 }
 .Today {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
@@ -84,18 +96,22 @@
   width: 15px;
   display: block;
   margin: 0 auto;
+  color: var(--color);
 }
 .Percentage {
   text-align: center;
+  color: var(--color);
 }
 .MaxMindegree {
   width: 32px;
   display: block;
   margin: 0 auto;
+  color: var(--color);
 }
 .MaxMin {
   display: flex;
   justify-content: center;
+  color: var(--color);
 }
 .Min {
   opacity: 0.8;
@@ -105,20 +121,28 @@
   width: 30px;
   display: block;
   margin: 0 auto;
+  color: var(--color);
 }
 .Speed {
   text-align: center;
+  color: var(--color);
 }
 .Speedwind {
   font-size: 17px;
+  color: var(--color);
 }
 .KilometerH {
   font-size: 10px;
+  color: var(--color);
+}
+.line {
+  color: var(--color);
 }
 .Day {
   text-align: center;
   font-size: 14px;
   margin-bottom: 5px;
+  color: var(--color);
 }
 .dayImg {
   display: block;
@@ -128,6 +152,10 @@
 .DayDegree {
   text-align: center;
   font-size: 15px;
+  color: var(--color);
+}
+footer {
+  font-size: 12px;
 }
 @media (max-width: 600px) {
   .cityName {
@@ -138,12 +166,16 @@
   }
   .weatherType {
     font-size: 13px;
+    margin-bottom: 20px;
   }
   .Degrees {
     font-size: 45px;
   }
   .cilsiuse {
     top: -30px;
+  }
+  .temp {
+    margin: 20px;
   }
   .Water {
     width: 10px;
@@ -163,5 +195,8 @@
   .styled {
     padding: 4px 8px;
     font-size: 13px;
+  }
+  .Today {
+    margin-bottom: 20px;
   }
 }

@@ -21,7 +21,11 @@ export default function WeatherForecastDay(props) {
     <div>
       <div className="Day"> {day()} </div>
       <div className="dayImg">
-        <WeatherIcon code={props.data.weather[0].icon} size={35} color="gray" />
+        <WeatherIcon
+          code={props.data.weather[0].icon}
+          size={35}
+          color="#d3d6db"
+        />
       </div>
       <div className="DayDegree">{Math.round(props.data.temp.day)}℃</div>
     </div>
