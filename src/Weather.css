@@ -199,4 +199,10 @@ footer {
   .Today {
     margin-bottom: 20px;
   }
+  .weatherImage canvas {
+    width: 100px;
+  }
+  .dayImg .weatherImage canvas {
+    width: 40px;
+  }
 }
